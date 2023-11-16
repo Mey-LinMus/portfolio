@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/Home.css';
 import { Link, Element } from 'react-scroll';
-import About from '../components/About';
-import Portfolio from '../components/Portfolio';
-import Contact from '../components/Contact';
+import About from './About';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 function Home() {
   return (
