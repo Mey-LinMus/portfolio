@@ -1,0 +1,157 @@
+[
+  {
+    "id": 1,
+    "image": "DesignI_Werkstuk_zelfWebsite.png",
+    "itemTitle": "Website: Thema mezelf",
+    "course": "Design",
+    "detail": {
+      "title": "Website: Thema mezelf",
+      "file": "Website_Thema_mezelf.pdf",
+      "description": ""
+    }
+  },
+  {
+    "id": 2,
+    "image": "DesignI_Werkstuk_Affiche.png",
+    "itemTitle": "Typografische affiche",
+    "course": "Design",
+    "detail": {
+      "title": "Typografische affiche",
+      "file": "Mey-Lin_Mus_affiche.pdf",
+      "description": "Voor deze opdracht heb ik de tekst 'My Words Are Leaving Me' ontworpen. De tekst is zo geplaatst dat de eindletters van 'Are,' 'Leaving,' en 'Me' half zichtbaar zijn, alsof ze verdwijnen. Dit symboliseert het idee van verlies en droefheid. Ik heb gekozen voor het lettertype 'Helvetica Neue Thin' vanwege de delicate uitstraling, die de trieste sfeer benadrukt. De tekst neemt bewust weinig ruimte in beslag en staat in de bovenhoek, zodat er plaats is voor andere zinnen of woorden uit de songtekst. Dit ontwerp vertelt het verhaal van woorden die langzaam verdwijnen, wat de trieste boodschap van de zin 'My Words Are Leaving Me' weergeeft. De lege ruimte op de affiche biedt mogelijkheden voor verdere uitbreiding van het verhaal."
+
+    }
+  },
+  {
+    "id": 3,
+    "image": "DesignII_Werkstuk_Structuur_en_Flow.png",
+    "itemTitle": "Interactieve wireframe",
+    "course": "Design",
+    "detail": {
+      "title": "Interactieve wireframe",
+      "file": "Delhaize 5_Wireframe.pdf",
+      "description": "description 3"
+    }
+  },
+  {
+    "id": 4,
+    "image": "DesignII_Werkstuk_Festival_Time.png",
+    "itemTitle": "Festival Time",
+    "course": "Design",
+    "detail": {
+      "title": "Festival Time",
+      "file": "Mus_Mey-Lin_festival.pdf",
+      "description": "description 4"
+    }
+  },
+  {
+    "id": 5,
+    "image": "DesignII_Werkstuk_Dear_data.png",
+    "itemTitle": "Dear data: Infografiek",
+    "course": "Design",
+    "detail": {
+      "title": "Dear data: Infografiek",
+      "file": "Mey-Lin_Mus_Deardata.pdf",
+      "description": "description 5"
+    }
+  },
+  {
+    "id": 6,
+    "image": "DesignIII_Werkstuk_DISCOVERY_CHALLENGE.png",
+    "itemTitle": "Discovering Challenge",
+    "course": "Design",
+    "detail": {
+      "title": "Discovering Challenge",
+      "file": "Mey-Lin_Mus_DIII_DISCOVERY.pdf",
+      "description": "description 6"
+    }
+  },
+  {
+    "id": 7,
+    "image": "DesignIII_Werkstuk_TERATE_&_TEST_YOUR_IDEAS.png",
+    "itemTitle": "Concept installatie",
+    "course": "Design",
+    "detail": {
+      "title": "Concept installatie",
+      "file": "Eindwerk_pitch_document_Mey-Lin_Mus.pdf",
+      "description": "description 7"
+    }
+  },
+  {
+    "id": 8,
+    "image": "DesignIV_Werkstuk_Multipharma.png",
+    "itemTitle": "Desing thinking",
+    "course": "Design",
+    "detail": {
+      "title": "Desing thinking",
+      "file": "https://www.figma.com/file/USY0uyi6yqKgwZVlrcmd6l/Design?type=design&mode=design",
+      "description": "description 8"
+    }
+  },
+  {
+    "id": 9,
+    "image": "Motion_Werkstuk_Lyrical_Kinetic_Typography.png",
+    "itemTitle": "Lyrical Kinetic Typography",
+    "course": "Motion",
+    "detail": {
+      "title": "Lyrical Kinetic Typography",
+      "file": "Lyrical Kinetic Typography _Mey-Lin_Mus .mp4",
+      "description": "description 9"
+    }
+  },
+  {
+    "id": 10,
+    "image": "Motion_Werkstuk_Hoofdopdracht.png",
+    "itemTitle": "Beautiful earth",
+    "course": "Motion",
+    "detail": {
+      "title": "Beautiful earth",
+      "file": "Hoofdopdracht Mey-Lin Mus.mp4",
+      "description": "description 10"
+    }
+  },
+  {
+    "id": 11,
+    "image": "MotionG_Werkstuk_Character_Dance_Animation.png",
+    "itemTitle": "Character Dance Animation",
+    "course": "Motion Graphics",
+    "detail": {
+      "title": "Character Dance Animation",
+      "file": "Dancing_Jonny_Mey-Lin_Mus.mp4",
+      "description": "description 11"
+    }
+  },
+  {
+    "id": 12,
+    "image": "MotionG_Werkstuk_hoofdopdracht.png",
+    "itemTitle": "Journey to Belonging",
+    "course": "Motion Graphics",
+    "detail": {
+      "title": "Journey to Belonging: Navigating the Complexities of Adoption",
+      "file": "Jouney_to_belonging.mp4",
+      "description": "description 12"
+    }
+  },
+  {
+    "id": 13,
+    "image": "Frontend_Wikiwall.png",
+    "itemTitle": "Wikiwall",
+    "course": "Front-End",
+    "detail": {
+      "title": "Wikiwall",
+      "file": "https://front-end-course-project-mey-lin-mus.onrender.com/",
+      "description": "description 13"
+    }
+  },
+  {
+    "id": 14,
+    "image": "GrowII_Werkstuk_photography_portfolio.png",
+    "itemTitle": "Photography portfolio",
+    "course": "Grow",
+    "detail": {
+      "title": "Photography portfolio",
+      "file": "https://ehb-mct.github.io/grow-II-portfolio/",
+      "description": "description 13"
+    }
+  }
+]

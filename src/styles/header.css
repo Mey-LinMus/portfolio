@@ -1,0 +1,111 @@
+.decoration {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  width: 10%;
+  height: auto;
+  z-index: 1;
+}
+
+.decoration {
+  animation: rotateAndBounce 5s ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes rotateAndBounce {
+  0%,
+  100% {
+    transform: scale(0.9) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(180deg);
+  }
+}
+
+.text-balloon {
+  position: absolute;
+  padding: 20px 25px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 50px;
+  display: inline-flex;
+  line-height: 1.3;
+  left: 120%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 65%;
+  top: 32%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.text-balloon::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -19px;
+  border-width: 20px 30px 10px 0;
+  border-style: solid;
+  border-color: transparent #ffffff transparent transparent;
+  transform: translateY(-50%);
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: #4461ab;
+  color: #e0e0e0;
+  background-image: url("../assets/new-background.png ");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.profile-image {
+  width: 110%;
+  margin-right: 20px;
+  margin-left: -11%;
+  margin-bottom: 70px;
+}
+
+.middle-content {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 5%;
+  margin-right: 10%;
+}
+
+/* Media queries for tablet screens */
+@media (max-width: 768px) {
+  .text-balloon {
+    padding: 15px;
+    font-size: 12px;
+    width: 45%;
+    left: 90%;
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
+/* Media queries for mobile screens */
+@media (max-width: 480px) {
+  /* .text-balloon {
+    width: 40%;
+    font-size: 12px;
+    margin: 0px;
+  } */
+
+  .profile-image {
+    width: 50%;
+    margin-right: 5px;
+    margin-left: 10%;
+  }
+}

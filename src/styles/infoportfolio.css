@@ -1,0 +1,96 @@
+/* Styles for the InfoPortfolio component */
+.container-info {
+  background-color: #ffffffb6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: center; /* Center the content */
+}
+
+/* Styles for the PDF viewer */
+.pdf-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the PDF viewer horizontally */
+  text-align: center; /* Center the text content */
+}
+
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Styles for the download button */
+.page-navigation button {
+  background-color: transparent;
+  margin-top: 20px;
+  color: #000000;
+  border: none;
+  padding: 0px 10px;
+  font-size: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.page-navigation span {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.download {
+  margin-top: 20px;
+  background-color: #497af9;
+  color: #e0e0e0;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.visitButton {
+  text-decoration: none;
+  margin-top: 20px;
+  background-color: #497af9;
+  color: #e0e0e0;
+  border: none;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 10%;
+  cursor: pointer;
+}
+
+.visitButton a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+/* Styles for the video player */
+.video-container {
+  margin-top: 20px;
+}
+
+/* Styles for the website iframe */
+.website-container {
+  margin-top: 20px;
+}
+
+.website-container a {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+iframe {
+  border: none;
+}

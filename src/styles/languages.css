@@ -1,0 +1,48 @@
+/* languages.css */
+
+.cv {
+  height: 30vh;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Vertically center content */
+  background-color: rgba(68, 97, 171, 0.7);
+
+}
+
+.cv h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.languages-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.language-item {
+  width: calc(33.33% - 10px); /* Adjust the width as needed */
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.progress-bar {
+  background-color: #2a24a3;
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.progress {
+  background-color: #3494fb; /* You can choose your own color */
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}

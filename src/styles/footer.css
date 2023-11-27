@@ -1,0 +1,41 @@
+/* footer.css */
+.footer {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e0e0e0;
+  
+}
+.footer h2 {
+  font-weight: bold;
+}
+
+.footer-content {
+  background-color: rgba(68, 97, 171, 0.7);
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.contact-list li {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.contact-list a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-list a:hover {
+  color: #70A6FF;
+}

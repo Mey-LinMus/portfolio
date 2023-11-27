@@ -1,0 +1,54 @@
+.skills {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Vertically center content */
+  height: 50vh;
+}
+
+.skills h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.skills-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-column {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.skill-name {
+  width: 150px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-right: 10px;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #3494fb; /* Set your desired background color for the progress container */
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress-skills {
+  background-color: #403c96;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.3s ease; /* Remove the duplicate transition property */
+}
