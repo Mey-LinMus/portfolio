@@ -89,19 +89,19 @@ const Home = () => {
     if (location.state && location.state.scrollToPortfolio) {
       scrollToPortfolio();
     } else {
-      scrollToHeader(); // Scroll to header by default when the page loads
+      scrollToHeader(); 
     }
   }, [location.state]);
 
-  // Define animation variants for the Portfolio section
+
   const portfolioVariants = {
     hidden: { opacity: 0, x: -100 },
     visible: {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 1, // Adjust the animation duration
-        ease: "easeInOut", // Adjust the easing function
+        duration: 1, 
+        ease: "easeInOut", 
       },
     },
   };
@@ -112,12 +112,12 @@ const Home = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if the Languages section is in view
-      if (languagesInViewRef.current) { // Add this condition to guard against undefined
+    
+      if (languagesInViewRef.current) { 
         const scrollDiff = window.scrollY - languagesInViewRef.current.offsetTop;
-        const parallaxValue = scrollDiff * 0.2; // Adjust the multiplier for desired parallax effect
+        const parallaxValue = scrollDiff * 0.2; 
 
-        // Apply the parallax effect to the background position
+    
         languagesInViewRef.current.style.backgroundPositionY = `${parallaxValue}px`;
       }
     };
@@ -131,9 +131,6 @@ const Home = () => {
 
   return (
     <div>
-      <motion.div className="contact-button" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.5 }}>
-        <button onClick={scrollToFooter}>Contact</button>
-      </motion.div>
 
       <ScrollTrigger onEnter={handleScrollEnter} onExit={handleScrollExit}>
         <div ref={headerRef} className="Header">
