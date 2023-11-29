@@ -31,19 +31,19 @@ const Languages = () => {
       }
     };
 
-    // Attach a scroll event listener
+ 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Call it once on component mount
+    handleScroll(); 
 
-    // Remove the event listener when the component unmounts
+   
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // Empty dependency array to run this effect only once
+  }, []); 
 
   return (
     <div className="cv">
-      {/* Wrap the content with ScrollTrigger */}
+
       <ScrollTrigger onEnter={handleScrollEnter}>
         <h2>Talen</h2>
         <div className="languages-container">

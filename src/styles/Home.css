@@ -1,34 +1,32 @@
 body {
   margin: 0px;
-  background-color: #dce4f8;
   overflow-x: hidden;
   overflow-y: auto;
-  font-family: "Montserrat", sans-serif;
+  font-family: Helvetica;
+  color: #f1f1f1;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
 }
 
 .Header {
-  background-color: #4461ab;
   position: relative;
   overflow: hidden;
 }
 
 .Skills {
-  background-color: #dce4f8;
+  /* background-color: #000000; */
 }
 
 .Languages {
-  background-image: url("../assets/new-background2.png ");
-  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .Portfolio {
-  background-color: #dce4f8;
+  /* background-color: #000000; */
 }
 .Footer {
-  background-color: #4461ab;
-  background-image: url("../assets/new-background2.png ");
+  /* background-color: #000000; */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -41,17 +39,6 @@ body {
   z-index: 999;
 }
 
-.contact-button button {
-  font-weight: bold;
-  background-color: #8bd6f7;
-  color: #4461ab;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
 .back-to-top-container {
   position: fixed;
   bottom: 20px;
@@ -60,8 +47,7 @@ body {
 }
 
 .back-to-top-button button {
-  background-color: #8bd6f7;
-  color: #4461ab;
+  background-color: #101010;
   width: 40px;
   height: 40px;
   border: none;
@@ -75,24 +61,25 @@ body {
   bottom: 10px;
   right: 20px;
   transform-origin: center;
+  color: white;
 }
 
 .languages-section {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #4461ab;
-  color: #fff;
+  /* background-color: #000000; */
+  color: #f1f1f1;
 }
 
 ::-webkit-scrollbar {
   width: 5px;
-  border-radius: 5px; /* Round the corners */
+  border-radius: 5px;
   background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #8bd6f7;
-  border-radius: 5px; /* Round the corners */
+  background: #dd1717;
+  border-radius: 5px;
   height: 10px;
 }
 

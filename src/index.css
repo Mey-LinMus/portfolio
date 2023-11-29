@@ -1,12 +1,5 @@
 body {
   margin: 0;
-/* Specify the gradient background for the body element */
- 
-  background: linear-gradient(to bottom, #B3E0FF, #007ACC);
-  /* Add any other CSS styles you need for the body */
-  color: #333333; /* Text color */
-  
-
 }
 
 code {

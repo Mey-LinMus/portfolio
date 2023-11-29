@@ -1,20 +1,17 @@
-/* footer.css */
 .footer {
   height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #e0e0e0;
-  
+  color: #f1f1f1;
 }
 .footer h2 {
   font-weight: bold;
 }
 
 .footer-content {
-  background-color: rgba(68, 97, 171, 0.7);
   width: 100%;
-  max-width: 800px; /* Adjust as needed */
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
@@ -31,11 +28,7 @@
 }
 
 .contact-list a {
-  color: #e0e0e0;
+  color: #f1f1f1;
   text-decoration: none;
   transition: color 0.3s;
-}
-
-.contact-list a:hover {
-  color: #70A6FF;
 }
