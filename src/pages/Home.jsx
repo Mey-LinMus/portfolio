@@ -6,9 +6,9 @@ import Skills from "../components/Skills";
 import Languages from "../components/Languages";
 import Footer from "../components/Footer";
 import { motion, useAnimation } from "framer-motion";
-import "../styles/home.css";
+import "../styles/Home.css";
 import { useLocation } from "react-router-dom";
-import { useInView } from "react-intersection-observer"; // Import the useInView hook
+import { useInView } from "react-intersection-observer";
 
 const Home = () => {
   const footerRef = useRef(null);
@@ -27,11 +27,11 @@ const Home = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const controls = useAnimation();
 
-  const scrollToFooter = () => {
-    if (footerRef.current) {
-      footerRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const scrollToFooter = () => {
+  //   if (footerRef.current) {
+  //     footerRef.current.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
   const scrollToHeader = () => {
     if (headerRef.current) {
@@ -89,10 +89,9 @@ const Home = () => {
     if (location.state && location.state.scrollToPortfolio) {
       scrollToPortfolio();
     } else {
-      scrollToHeader(); 
+      scrollToHeader();
     }
   }, [location.state]);
-
 
   const portfolioVariants = {
     hidden: { opacity: 0, x: -100 },
@@ -100,8 +99,8 @@ const Home = () => {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 1, 
-        ease: "easeInOut", 
+        duration: 1,
+        ease: "easeInOut",
       },
     },
   };
@@ -112,12 +111,11 @@ const Home = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-    
-      if (languagesInViewRef.current) { 
-        const scrollDiff = window.scrollY - languagesInViewRef.current.offsetTop;
-        const parallaxValue = scrollDiff * 0.2; 
+      if (languagesInViewRef.current) {
+        const scrollDiff =
+          window.scrollY - languagesInViewRef.current.offsetTop;
+        const parallaxValue = scrollDiff * 0.2;
 
-    
         languagesInViewRef.current.style.backgroundPositionY = `${parallaxValue}px`;
       }
     };
@@ -131,7 +129,6 @@ const Home = () => {
 
   return (
     <div>
-
       <ScrollTrigger onEnter={handleScrollEnter} onExit={handleScrollExit}>
         <div ref={headerRef} className="Header">
           <Header />
