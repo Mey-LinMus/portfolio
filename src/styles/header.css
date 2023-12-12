@@ -2,8 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  font-size: 14px;
-  font-family: Helvetica;
+  font-family: "Montserrat", sans-serif;
   background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
 }
 
@@ -22,12 +21,11 @@ body {
   position: absolute;
   top: 57px;
   left: 477px;
-  font-size: 24px;
   opacity: 1;
   text-align: left;
 }
-.v4_3 {
-  width: 100px;
+/* .v4_3 {
+  width: 50px;
   height: 100px;
   background: url("../assets/logo2.png");
   background-repeat: no-repeat;
@@ -38,14 +36,14 @@ body {
   top: 34px;
   left: 48px;
   overflow: hidden;
-}
+} */
 .v4_5 {
   width: 646px;
   color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 350px;
   left: 733px;
-  font-size: 24px;
+  font-size: 20px;
   opacity: 1;
   text-align: left;
 }
