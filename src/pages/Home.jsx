@@ -138,6 +138,23 @@ const Home = () => {
       <ScrollTrigger
         onEnter={handleScrollEnter}
         onExit={handleScrollExit}
+        className="Portfolio"
+      >
+        <div ref={portfolioRef}>
+          <motion.div
+            className="Portfolio"
+            initial="hidden"
+            animate={controls}
+            variants={portfolioVariants}
+          >
+            <Portfolio />
+          </motion.div>
+        </div>
+      </ScrollTrigger>
+
+      <ScrollTrigger
+        onEnter={handleScrollEnter}
+        onExit={handleScrollExit}
         className="Skills"
       >
         <Skills />
@@ -150,23 +167,6 @@ const Home = () => {
       >
         <div ref={languagesInViewRef} className="Languages">
           <Languages />
-        </div>
-      </ScrollTrigger>
-
-      <ScrollTrigger
-        onEnter={handleScrollEnter}
-        onExit={handleScrollExit}
-        className="Portfolio"
-      >
-        <div ref={portfolioRef}>
-          <motion.div
-            className="Portfolio"
-            initial="hidden"
-            animate={controls}
-            variants={portfolioVariants}
-          >
-            <Portfolio />
-          </motion.div>
         </div>
       </ScrollTrigger>
 

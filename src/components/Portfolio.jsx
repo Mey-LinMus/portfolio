@@ -62,14 +62,14 @@ const Portfolio = () => {
   };
 
   return (
-    <motion.div className="carousel-container" ref={ref}   initial="hidden"
-    animate={controls}
-    variants={portfolioVariants}>
-      <h2
-      
-      >
-        Portfolio
-      </h2>
+    <motion.div
+      className="carousel-container"
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={portfolioVariants}
+    >
+      <h2>Portfolio</h2>
       <div className="slider-wrapper">
         <Slider {...carouselSettings}>
           {portfolioData.map((item) => (
@@ -80,7 +80,12 @@ const Portfolio = () => {
                   alt={`Item ${item.id}`}
                 />
                 <h3>{item.itemTitle}</h3>
-                <p>{item.course}</p>
+                <ul>
+                  {item.technologies &&
+                    item.technologies.map((tech, index) => (
+                      <li key={index}>{tech}</li>
+                    ))}
+                </ul>
               </Link>
             </div>
           ))}

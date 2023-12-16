@@ -34,6 +34,7 @@
     "id": 4,
     "image": "Generative_Art_Showcase.png",
     "itemTitle": "Generative Art Showcase",
+    "technologies": ["HTML", "CSS", "JavaScript"],
     "detail": {
       "title": "Festival Time",
       "file": "https://mey-linmus.github.io/generative-art/",
