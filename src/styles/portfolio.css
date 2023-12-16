@@ -1,12 +1,16 @@
 .carousel-item {
   text-align: center;
   padding: 10px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.48);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   transition: transform 0.3s ease;
-  max-width: 250px; /* Adjust the maximum width */
-  margin: 0 auto; /* Center the items horizontally */
+
+  max-width: 350px; /* Adjust the maximum width */
+  margin: 5px auto; /* Center the items horizontally */
   margin-bottom: 50px;
 }
 .port-items {
@@ -35,7 +39,6 @@
   margin-top: 5%;
 }
 
-
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -43,7 +46,7 @@
   z-index: 1;
   font-size: 30px;
   cursor: pointer;
-  color: #70a6ff;
+  color: #dd1717;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
