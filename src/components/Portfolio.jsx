@@ -47,19 +47,21 @@ const Portfolio = () => {
             key={item.id}
           >
             <div className="portfolio-item-content">
-              <img
-                src={require(`../assets/Portfolio/${item.image}`)}
-                alt={`Item ${item.id}`}
-              />
-              <div className="portfolio-text">
-                <h3>{item.itemTitle}</h3>
-                <p>{item.description}</p>
-                <ul>
-                  {item.technologies &&
-                    item.technologies.map((tech, index) => (
-                      <li key={index}>{tech}</li>
-                    ))}
-                </ul>
+              <h3>{item.itemTitle}</h3>
+              <div className="image-wrapper">
+                <img
+                  src={require(`../assets/Portfolio/${item.image}`)}
+                  alt={`Item ${item.id}`}
+                />
+                <div className="hover-info">
+                  <p>{item.description}</p>
+                  <ul>
+                    {item.technologies &&
+                      item.technologies.map((tech, index) => (
+                        <li key={index}>{tech}</li>
+                      ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

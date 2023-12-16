@@ -4,7 +4,9 @@ import "../styles/header.css";
 const Header = () => {
   return (
     <div className="v1_2">
-      <a href="" className="contact">Contact</a>
+      <a href="" className="contact">
+        Contact
+      </a>
       <div className="v4_3"></div>
       <span className="v4_5">
         Ik ben een gedreven student aan de Erasmushogeschool Brussel, waar ik de
