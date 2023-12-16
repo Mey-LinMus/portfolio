@@ -1,62 +1,58 @@
-.carousel-item {
-  text-align: center;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.48);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: transform 0.3s ease;
 
-  max-width: 350px; /* Adjust the maximum width */
-  margin: 5px auto; /* Center the items horizontally */
-  margin-bottom: 50px;
-}
-.port-items {
-  text-decoration: none;
-  color: #000;
+.slider-wrapper {
+  display: grid;
+  grid-auto-rows: 100vh; /* Set each row to take the full height of the viewport */
+  grid-gap: 30px;
 }
 
-.carousel-item:hover {
-  transform: scale(1.05);
+.portfolio-item {
+  overflow: hidden;
+  height: 100%; 
+  width: 100%;
+  margin-bottom: 30px; 
 }
 
-.carousel-item img {
-  max-width: 100%;
+.portfolio-item.even .portfolio-item-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+}
+
+.portfolio-item.odd .portfolio-item-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Text next to image for odd items */
+}
+
+.portfolio-item img {
+  width: 100%;
   height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
 }
 
-.carousel-item h3 {
-  font-weight: bold;
-  margin: 0;
-}
-.carousel-container h2 {
-  text-align: center;
-  margin-bottom: 5%;
-  margin-top: 5%;
+.portfolio-text {
+  text-align: left;
 }
 
-.slick-prev,
-.slick-next {
-  position: absolute;
-  top: 40%;
-  z-index: 1;
-  font-size: 30px;
-  cursor: pointer;
-  color: #dd1717;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
-  transform-origin: center;
+.port-items {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.slick-prev {
-  left: 10px;
+.port-items h3,
+.port-items p,
+.port-items ul {
+  margin-top: 10px;
 }
 
-.slick-next {
-  right: 10px;
+.port-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.port-items li {
+  margin-right: 10px;
 }
