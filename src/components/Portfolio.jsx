@@ -5,7 +5,7 @@ import "../styles/portfolio.css";
 import portfolioData from "../data/portfolioData.json";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { gsap } from "gsap";
+
 
 const Portfolio = () => {
   const [ref, inView] = useInView({
