@@ -1,27 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
+import { gsap, Power1 } from "gsap";
 import Typewriter from "typewriter-effect/dist/core";
 import "../styles/header.css";
-import Logo from "../assets/MLogo.svg";
 import Profile from "../assets/profile picture.png";
-import Vivus from "vivus";
+import Logo from "../assets/MLogo.svg";
 
 const Header = () => {
-  const [showSVG, setShowSVG] = useState(false);
-  const svgRef = useRef(null);
-
-  useEffect(() => {
-    const svgElement = svgRef.current;
-
-    if (showSVG && svgElement) {
-      new Vivus(svgElement, {
-        duration: 200,
-        start: "autostart",
-        type: "oneByOne",
-      });
-    }
-  }, [showSVG]);
-
   const typewriterRef = useRef(null);
+  const profilePictureRef = useRef(null);
+
+  // Typewriter effect
   useEffect(() => {
     const typewriter = new Typewriter(typewriterRef.current, {
       loop: false,
@@ -38,18 +26,31 @@ const Header = () => {
           "Ik werk nauwkeurig en met het nodige geduld. Bovendien werk ik graag in teamverband en ben ik goed in communiceren."
       )
       .start();
+
+    // Wavy animation
+    gsap.fromTo(
+      profilePictureRef.current,
+      { x: -10 },
+      {
+        x: 10,
+        repeat: -1,
+        yoyo: true,
+        ease: Power1.easeInOut,
+        duration: 1,
+      }
+    );
   }, []);
 
   return (
     <div className="header">
       <div className="logo">
-        <img src={Logo} alt="" ref={svgRef} />
+        <img src={Logo} alt="" />
       </div>
       <div id="hearder-text">
         <span ref={typewriterRef} className="header-info"></span>
       </div>
-      <div className="profile-picture">
-        <img src={Profile} alt="" />
+      <div className="profile-picture" ref={profilePictureRef}>
+        <img src={Profile} alt="Profile" />
       </div>
     </div>
   );
