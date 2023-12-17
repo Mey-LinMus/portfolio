@@ -29,12 +29,6 @@ const Portfolio = () => {
     },
   };
 
-
-
-
-
-
-  
   return (
     <motion.div
       className="portfolio-container"
@@ -49,7 +43,7 @@ const Portfolio = () => {
             className={`portfolio-item ${index % 2 === 0 ? "even" : "odd"}`}
             key={item.id}
           >
-            <div className="portfolio-item-content">
+            <section className="portfolio-item-content">
               <h3>{item.itemTitle}</h3>
               <div className="image-wrapper">
                 <img
@@ -79,11 +73,12 @@ const Portfolio = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
         ))}
       </div>
     </motion.div>
   );
 };
+
 export default Portfolio;
