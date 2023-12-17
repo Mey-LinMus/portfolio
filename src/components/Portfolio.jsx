@@ -54,13 +54,14 @@ const Portfolio = () => {
                   alt={`Item ${item.id}`}
                 />
                 <div className="hover-info">
-                  <p>{item.description}</p>
-                  <ul>
-                    {item.technologies && (
-                      <li key={index}>{item.technologies.join(" | ")}</li>
-                    )}
-                  </ul>
-
+                  <div className="hover-text">
+                    <p>{item.description}</p>
+                    <ul>
+                      {item.technologies && (
+                        <li key={index}>{item.technologies.join(" | ")}</li>
+                      )}
+                    </ul>
+                  </div>
                   <button className="website-button">
                     {item.file && (
                       <a

@@ -93,11 +93,10 @@
   transition: opacity 0.3s;
 }
 
-.hover-info p {
-  justify-items: center;
-  text-align: center;
-}
-.hover-info ul {
+.hover-text {
+  position: absolute;
+  top: 20%;
+  padding: 35px;
   justify-items: center;
   text-align: center;
 }
@@ -108,11 +107,6 @@
 
 .image-wrapper:hover .hover-info {
   opacity: 1;
-}
-
-.portfolio-text {
-  text-align: left;
-  width: 70%;
 }
 
 .link-button {
@@ -128,7 +122,13 @@
   border-radius: 30px;
   padding: 6px 10px;
   background-color: white;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 10px;
 }
 
+.website-button {
+  position: absolute;
+  top: 65%;
+  left: 45%;
+  justify-items: center;
+  text-align: center;
+}
