@@ -5,6 +5,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Svg */
+#Layer_2 {
+  fill: #9b9b9b;
+}
+
 .header {
   background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
   width: 100%;

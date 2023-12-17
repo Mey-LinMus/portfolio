@@ -30,9 +30,10 @@ const Header = () => {
     // Wavy animation
     gsap.fromTo(
       profilePictureRef.current,
-      { x: -10 },
+      { x: -5, rotation: -0.5 },
       {
-        x: 10,
+        x: 5,
+        rotation: 0.5,
         repeat: -1,
         yoyo: true,
         ease: Power1.easeInOut,
