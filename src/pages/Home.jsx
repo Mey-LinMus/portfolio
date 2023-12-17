@@ -27,11 +27,11 @@ const Home = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const controls = useAnimation();
 
-  // const scrollToFooter = () => {
-  //   if (footerRef.current) {
-  //     footerRef.current.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
+  const scrollToFooter = () => {
+    if (footerRef.current) {
+      footerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const scrollToHeader = () => {
     if (headerRef.current) {
@@ -127,8 +127,17 @@ const Home = () => {
     };
   }, [languagesInViewRef]);
 
+
   return (
     <div>
+      <motion.div
+        className="contact-button"
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.5 }}
+      >
+        <button onClick={scrollToFooter}>Contact</button>
+      </motion.div>
+
       <ScrollTrigger onEnter={handleScrollEnter} onExit={handleScrollExit}>
         <div ref={headerRef} className="Header">
           <Header />
