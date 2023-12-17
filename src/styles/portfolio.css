@@ -71,14 +71,14 @@
 .image-wrapper {
   position: relative;
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .hover-info {
   position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 70%;
   height: 100%;
   border-radius: 30px;
@@ -93,6 +93,19 @@
   transition: opacity 0.3s;
 }
 
+.hover-info p {
+  justify-items: center;
+  text-align: center;
+}
+.hover-info ul {
+  justify-items: center;
+  text-align: center;
+}
+
+.hover-info li {
+  list-style-type: none;
+}
+
 .image-wrapper:hover .hover-info {
   opacity: 1;
 }
@@ -101,3 +114,21 @@
   text-align: left;
   width: 70%;
 }
+
+.link-button {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: medium;
+}
+
+.website-button {
+  border-radius: 30px;
+  padding: 6px 10px;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 10px;
+}
+

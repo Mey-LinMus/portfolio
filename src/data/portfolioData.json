@@ -3,7 +3,14 @@
     "id": 1,
     "image": "Interactieve_spiderman_Website.png",
     "itemTitle": "Interactieve spiderman Website",
-    "technologies": ["HTML", "CSS", "JavaScript"],
+    "technologies": [
+      "React.js",
+      "GSAP",
+      "Vivus.js",
+      "Framer-motion",
+      "Anime.js",
+      "particles"
+    ],
     "file": "https://spider-man-kq63.onrender.com/",
     "description": "Ik heb een boeiende Spiderman-website gemaakt met vloeiende overgangen en dynamische animaties. Met behulp van GSAP, react-parallax en framer-motion krijgt de site een levendige uitstraling. De introductie van Typewriter, vivus.js en anime.js voegt een creatieve touch toe, terwijl deeltjseffecten en audiobeheer met Howler de ervaring compleet maken. Ontdek Spiderman's universum in een interactieve en meeslepende online reis."
   },

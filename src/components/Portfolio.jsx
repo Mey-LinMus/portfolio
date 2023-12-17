@@ -56,11 +56,23 @@ const Portfolio = () => {
                 <div className="hover-info">
                   <p>{item.description}</p>
                   <ul>
-                    {item.technologies &&
-                      item.technologies.map((tech, index) => (
-                        <li key={index}>{tech}</li>
-                      ))}
+                    {item.technologies && (
+                      <li key={index}>{item.technologies.join(" | ")}</li>
+                    )}
                   </ul>
+
+                  <button className="website-button">
+                    {item.file && (
+                      <a
+                        href={item.file}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link-button"
+                      >
+                        Visit Website
+                      </a>
+                    )}
+                  </button>
                 </div>
               </div>
             </div>
