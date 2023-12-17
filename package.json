@@ -20,7 +20,7 @@
     "react-pdf": "^7.3.3",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
-    "react-scroll-parallax": "^3.4.2",
+    "react-scroll-parallax": "^3.4.5",
     "react-scroll-trigger": "^0.6.14",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",

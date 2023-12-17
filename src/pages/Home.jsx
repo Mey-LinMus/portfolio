@@ -9,6 +9,7 @@ import { motion, useAnimation } from "framer-motion";
 import "../styles/Home.css";
 import { useLocation } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
+import ParticlesBackground from "../components/ParticlesBackground";
 
 const Home = () => {
   const footerRef = useRef(null);
@@ -127,7 +128,6 @@ const Home = () => {
     };
   }, [languagesInViewRef]);
 
-
   return (
     <div>
       <motion.div
@@ -144,69 +144,52 @@ const Home = () => {
         </div>
       </ScrollTrigger>
 
-      <ScrollTrigger
-        onEnter={handleScrollEnter}
-        onExit={handleScrollExit}
-        className="Portfolio"
-      >
-        <div ref={portfolioRef}>
-          <motion.div
-            className="Portfolio"
-            initial="hidden"
-            animate={controls}
-            variants={portfolioVariants}
-          >
-            <Portfolio />
-          </motion.div>
-        </div>
-      </ScrollTrigger>
-
-      <ScrollTrigger
-        onEnter={handleScrollEnter}
-        onExit={handleScrollExit}
-        className="Skills"
-      >
-        <Skills />
-      </ScrollTrigger>
-
-      <ScrollTrigger
-        onEnter={handleScrollEnter}
-        onExit={handleScrollExit}
-        className="languages-section Languages"
-      >
-        <div ref={languagesInViewRef} className="Languages">
-          <Languages />
-        </div>
-      </ScrollTrigger>
-
-      <ScrollTrigger
-        onEnter={handleScrollEnter}
-        onExit={handleScrollExit}
-        className="Footer"
-      >
-        <div ref={footerRef}>
-          <Footer />
-        </div>
-      </ScrollTrigger>
-
-      <div className="back-to-top-container">
-        <motion.div
-          className="back-to-top-button"
-          style={{ display: showBackToTop ? "block" : "none" }}
-          initial="hidden"
-          animate={controls}
-          variants={buttonVariants}
+      <ParticlesBackground>
+        <ScrollTrigger
+          onEnter={handleScrollEnter}
+          onExit={handleScrollExit}
+          className="Portfolio"
         >
-          {/* Back to top button */}
-          <motion.button
-            onClick={scrollToHeader}
-            whileHover={{ scale: 1.2, rotate: 0 }}
-            whileTap={{ scale: 0.5 }}
-          >
-            &#129061;
-          </motion.button>
-        </motion.div>
-      </div>
+          <div ref={portfolioRef}>
+            <motion.div
+              className="Portfolio"
+              initial="hidden"
+              animate={controls}
+              variants={portfolioVariants}
+            >
+              <Portfolio />
+            </motion.div>
+          </div>
+        </ScrollTrigger>
+
+        <ScrollTrigger
+          onEnter={handleScrollEnter}
+          onExit={handleScrollExit}
+          className="Skills"
+        >
+          <Skills />
+        </ScrollTrigger>
+
+        <ScrollTrigger
+          onEnter={handleScrollEnter}
+          onExit={handleScrollExit}
+          className="languages-section Languages"
+        >
+          <div ref={languagesInViewRef} className="Languages">
+            <Languages />
+          </div>
+        </ScrollTrigger>
+
+        <ScrollTrigger
+          onEnter={handleScrollEnter}
+          onExit={handleScrollExit}
+          className="Footer"
+        >
+          <div ref={footerRef}>
+            <Footer />
+          </div>
+        </ScrollTrigger>
+      </ParticlesBackground>
     </div>
   );
 };
