@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-  width: 8%;
+  width: 5%;
   position: absolute;
   top: 34px;
   left: 48px;
@@ -33,29 +33,11 @@ body {
   text-align: left;
 }
 
-.header-title {
-  width: 323px;
-  color: rgba(255, 255, 255, 1);
+.profile-picture img {
+  width: 37%;
   position: absolute;
-  top: 287px;
-  left: 733px;
-  font-weight: Bold;
-  font-size: 24px;
-  opacity: 1;
-  text-align: left;
-}
-.profile-picture {
-  width: 765px;
-  height: 713px;
-  /* background: url("../assets/v6_13.png"); */
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  opacity: 1;
-  position: absolute;
-  top: 116px;
-  left: 45px;
-  overflow: hidden;
+  top: 100px;
+  left: 10%;
 }
 
 .contact {

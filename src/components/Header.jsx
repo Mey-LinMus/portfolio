@@ -1,9 +1,26 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Typewriter from "typewriter-effect/dist/core";
 import "../styles/header.css";
 import Logo from "../assets/MLogo.svg";
+import Profile from "../assets/profile picture.png";
+import Vivus from "vivus";
 
 const Header = () => {
+  const [showSVG, setShowSVG] = useState(false);
+  const svgRef = useRef(null);
+
+  useEffect(() => {
+    const svgElement = svgRef.current;
+
+    if (showSVG && svgElement) {
+      new Vivus(svgElement, {
+        duration: 200,
+        start: "autostart",
+        type: "oneByOne",
+      });
+    }
+  }, [showSVG]);
+
   const typewriterRef = useRef(null);
   useEffect(() => {
     const typewriter = new Typewriter(typewriterRef.current, {
@@ -26,12 +43,14 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <img src={Logo} alt="" />
+        <img src={Logo} alt="" ref={svgRef} />
       </div>
       <div id="hearder-text">
         <span ref={typewriterRef} className="header-info"></span>
       </div>
-      <div className="profile-picture"></div>
+      <div className="profile-picture">
+        <img src={Profile} alt="" />
+      </div>
     </div>
   );
 };
