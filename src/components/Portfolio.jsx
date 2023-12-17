@@ -44,7 +44,7 @@ const Portfolio = () => {
             key={item.id}
           >
             <section className="portfolio-item-content">
-              <h3>{item.itemTitle}</h3>
+              <h2>{item.itemTitle}</h2>
               <div className="image-wrapper">
                 <img
                   src={require(`../assets/Portfolio/${item.image}`)}

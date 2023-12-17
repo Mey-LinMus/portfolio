@@ -47,11 +47,10 @@
   justify-content: center;
 }
 
-.portfolio-item h3 {
+.portfolio-item h2 {
   margin-top: 20px;
   text-align: center;
-  font-family: 'Cabin', sans-serif;
-  font-size: large;
+  font-weight: bold;
 }
 
 .port-items ul {
