@@ -1,62 +1,22 @@
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// Portfolio.js
+import React, { useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "../styles/portfolio.css";
 import portfolioData from "../data/portfolioData.json";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
-gsap.registerPlugin(ScrollTrigger);
+import { gsap } from "gsap";
 
 const Portfolio = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
-
   const controls = useAnimation();
-  const sliderRef = useRef(null);
-
   useEffect(() => {
     if (inView) {
       controls.start("visible");
     }
-
-    const sections = gsap.utils.toArray(".portfolio-item");
-    const scrollContainer = sliderRef.current;
-
-    let scrollTween = gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
-      ease: "none",
-      scrollTrigger: {
-        trigger: scrollContainer,
-        pin: true,
-        scrub: 0.5, // Adjust the scrub value
-        end: "+=100%", // Adjust the end value
-        markers: true,
-      },
-    });
-    sections.forEach((section) => {
-      let text = section.querySelectorAll(".anim");
-
-      if (text.length === 0) return;
-
-      gsap.from(text, {
-        y: -130,
-        opacity: 0,
-        duration: 2,
-        ease: "elastic",
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: section,
-          containerAnimation: scrollTween,
-          start: "left center",
-          markers: true,
-        },
-      });
-    });
   }, [inView, controls]);
-
   const portfolioVariants = {
     hidden: { opacity: 0, x: -100 },
     visible: {
@@ -69,6 +29,12 @@ const Portfolio = () => {
     },
   };
 
+
+
+
+
+
+  
   return (
     <motion.div
       className="portfolio-container"
@@ -77,7 +43,7 @@ const Portfolio = () => {
       animate={controls}
       variants={portfolioVariants}
     >
-      <div className="slider-wrapper" ref={sliderRef}>
+      <div className="slider-wrapper">
         {portfolioData.map((item, index) => (
           <div
             className={`portfolio-item ${index % 2 === 0 ? "even" : "odd"}`}
@@ -120,5 +86,4 @@ const Portfolio = () => {
     </motion.div>
   );
 };
-
 export default Portfolio;

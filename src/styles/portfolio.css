@@ -4,15 +4,6 @@
   grid-gap: 30px;
 }
 
-.slider-wrapper {
-  display: flex; 
-}
-
-.portfolio-item {
-  flex: 0 0 auto; 
-  scroll-snap-align: start; 
-}
-
 .portfolio-item {
   overflow: hidden;
   height: 100%;
