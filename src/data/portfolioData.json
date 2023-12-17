@@ -18,7 +18,12 @@
     "id": 2,
     "image": "3D_Interactive_World.png",
     "itemTitle": "3D Interactive World",
-    "technologies": ["HTML", "CSS", "JavaScript"],
+    "technologies": [
+      "React.js",
+      " @react-three/fiber",
+      "@react-three/drei",
+      "GLTF-loader"
+    ],
     "file": "https://threed-interactive-world.onrender.com/",
     "description": "Ik heb een 3D Interactive World prototype gecreëerd. Met behulp van @react-three/fiber, @react-three/drei, en GLTF-loader wordt een meeslepende digitale omgeving gecreëerd. Ontdek gedetailleerde 3D-modellen, interactieve elementen, en animaties in deze intuïtieve wereld."
   },
@@ -26,7 +31,7 @@
     "id": 3,
     "image": "Register-login_Systeem.png",
     "itemTitle": "Register-login Systeem",
-    "technologies": ["HTML", "CSS", "JavaScript"],
+    "technologies": ["React.js", "Node.js", "MongoDB"],
     "file": "",
     "description": "Ik heb een efficiënt Register-login Systeem ontwikkeld, waarbij React.js de frontend, Node.js de backend, en MongoDB de database vormen. Functionaliteiten omvatten een strak ontworpen forum, veilige gebruikersregistratie, inlogfuncties, en preventie van dubbele registraties. "
   },
@@ -34,7 +39,7 @@
     "id": 4,
     "image": "Generative_Art_Showcase.png",
     "itemTitle": "Generative Art Showcase",
-    "technologies": ["HTML", "CSS", "JavaScript"],
+    "technologies": ["JavaScript", "p5.js", "HTML5 canvas"],
     "file": "https://mey-linmus.github.io/generative-art/",
     "description": "Ik heb een boeiende Generative Art Showcase gecreëerd, waarbij ik de kracht van p5.js, pts.js, en HTML5 Canvas heb verkend."
   },
@@ -42,7 +47,7 @@
     "id": 5,
     "image": "Note_bounce.png",
     "itemTitle": "Note bounce",
-    "technologies": ["HTML", "CSS", "JavaScript"],
+    "technologies": ["React.js", "GSAP", "Tone.js"],
     "file": "https://note-bounce.onrender.com/",
     "description": "Ik heb een interactief spelletje gemaakt waar muziek en animatie samenkomen. Met React, Tone.js en gsap reageert de bal op de toetsen van de keyboard waarbij elke toets een unieke muzikale en visuele ervaring creëert."
   }
