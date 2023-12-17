@@ -6,7 +6,6 @@ import portfolioData from "../data/portfolioData.json";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-
 const Portfolio = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -17,6 +16,7 @@ const Portfolio = () => {
       controls.start("visible");
     }
   }, [inView, controls]);
+
   const portfolioVariants = {
     hidden: { opacity: 0, x: -100 },
     visible: {
@@ -30,20 +30,20 @@ const Portfolio = () => {
   };
 
   return (
-    <motion.div
-      className="portfolio-container"
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={portfolioVariants}
-    >
+    <motion.div className="portfolio-container">
       <div className="slider-wrapper">
         {portfolioData.map((item, index) => (
           <div
             className={`portfolio-item ${index % 2 === 0 ? "even" : "odd"}`}
             key={item.id}
           >
-            <section className="portfolio-item-content">
+            <section
+              className="portfolio-item-content"
+              ref={ref}
+              initial="hidden"
+              animate={controls}
+              variants={portfolioVariants}
+            >
               <h2>{item.itemTitle}</h2>
               <div className="image-wrapper">
                 <img
