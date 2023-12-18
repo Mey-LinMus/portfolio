@@ -59,7 +59,10 @@ const Portfolio = () => {
                       )}
                     </ul>
                   </div>
-                  <button className="website-button">
+                  <motion.button
+                    className="website-button"
+                    whileHover={{ scale: 1.1, transition: { duration: 0.3 } }}
+                  >
                     {item.file && (
                       <a
                         href={item.file}
@@ -70,7 +73,7 @@ const Portfolio = () => {
                         Visit Website
                       </a>
                     )}
-                  </button>
+                  </motion.button>
                 </div>
               </div>
             </section>
