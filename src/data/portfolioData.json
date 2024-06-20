@@ -251,14 +251,26 @@
       "technologies": ["React.js", "GSAP", "Tone.js"]
     }
   },
+  
   {
     "id": 20,
     "image": "Note_bounce.png",
     "detail": {
       "title": "Duff",
       "file": "Werkstuk_Duff_Mey-Lin_Mus.pdf",
-      "description": "Ik heb een interactief spelletje gemaakt waar muziek en animatie samenkomen. Met React, Tone.js en gsap reageert de bal op de toetsen van de keyboard waarbij elke toets een unieke muzikale en visuele ervaring creëert.",
-      "technologies": ["React.js", "GSAP", "Tone.js"]
+      "description": "",
+      "technologies": []
+    }
+  },
+
+  {
+    "id": 21,
+    "image": "duff.png",
+    "detail": {
+      "title": "Duff",
+      "file": "Werkstuk_Duff_Mey-Lin_Mus.pdf",
+      "description": "",
+      "technologies": []
     }
   }
 ]
