@@ -233,6 +233,7 @@
   {
     "id": 18,
     "image": "Generative_Art_Showcase.png",
+    "itemTitle": "Generative Art Showcase",
     "detail": {
       "title": "Generative Art Showcase",
       "file": "https://mey-linmus.github.io/generative-art/",
@@ -244,6 +245,7 @@
   {
     "id": 19,
     "image": "Note_bounce.png",
+    "itemTitle": "Note bounce",
     "detail": {
       "title": "Note bounce",
       "file": "https://note-bounce.onrender.com/",
@@ -251,10 +253,11 @@
       "technologies": ["React.js", "GSAP", "Tone.js"]
     }
   },
-  
+
   {
     "id": 20,
-    "image": "Note_bounce.png",
+    "image": "duff.png",
+    "itemTitle": "Duff",
     "detail": {
       "title": "Duff",
       "file": "Werkstuk_Duff_Mey-Lin_Mus.pdf",
@@ -265,10 +268,23 @@
 
   {
     "id": 21,
-    "image": "duff.png",
+    "image": "Mixtape.png",
+    "itemTitle": "Mixtape",
     "detail": {
-      "title": "Duff",
-      "file": "Werkstuk_Duff_Mey-Lin_Mus.pdf",
+      "title": "Mixtape",
+      "file": "Werkstuk_2_Awesome_mixtape_Mey-Lin.pdf",
+      "description": "",
+      "technologies": []
+    }
+  },
+
+  {
+    "id": 22,
+    "image": "MarvelDatavisualisation.png",
+    "itemTitle": "Marvel Universe",
+    "detail": {
+      "title": "Marvel Universe",
+      "file": "Werkstuk_3_datavisualisatie_Mey-Lin_Mus.pdf",
       "description": "",
       "technologies": []
     }
