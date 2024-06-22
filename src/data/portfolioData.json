@@ -288,5 +288,17 @@
       "description": "",
       "technologies": []
     }
+  },
+
+  {
+    "id": 23,
+    "image": "kunst_in_huis.png",
+    "itemTitle": "Kunst in Huis",
+    "detail": {
+      "title": "Kunst in Huis",
+      "file": "Kunst_in_huis.pdf",
+      "description": "",
+      "technologies": []
+    }
   }
 ]
