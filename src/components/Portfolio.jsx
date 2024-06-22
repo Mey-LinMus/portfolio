@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import portfolioData from "../data/portfolioData.json";
 import { AiOutlineCaretLeft, AiOutlineCaretRight } from "react-icons/ai";
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer"; 
+import { useInView } from "react-intersection-observer";
 
 const Portfolio = () => {
   const [ref, inView] = useInView({
@@ -48,15 +48,14 @@ const Portfolio = () => {
     ),
   };
 
-
   const portfolioVariants = {
     hidden: { opacity: 0, x: -100 },
     visible: {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 1, 
-        ease: "easeInOut", 
+        duration: 1,
+        ease: "easeInOut",
       },
     },
   };
@@ -80,7 +79,6 @@ const Portfolio = () => {
                   alt={`Item ${item.id}`}
                 />
                 <h3>{item.itemTitle}</h3>
-                <p>{item.course}</p>
               </Link>
             </div>
           ))}

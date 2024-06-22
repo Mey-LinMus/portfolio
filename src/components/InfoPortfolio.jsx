@@ -5,7 +5,7 @@ import "react-pdf/dist/Page/TextLayer.css";
 import "../styles/infoportfolio.css";
 import { motion } from "framer-motion";
 
-// Enable pdfjs worker
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const InfoPortfolio = ({ info }) => {
@@ -32,17 +32,17 @@ const InfoPortfolio = ({ info }) => {
     const pdfUrl = `${process.env.PUBLIC_URL}/files/${info.file}`;
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.download = "document.pdf"; // You can set the desired file name here
+    link.download = "document.pdf"; 
     link.click();
   };
 
   const renderFileContent = () => {
     if (info.file.endsWith(".pdf")) {
-      let pdfWidth = 700; // Default width for most PDFs
+      let pdfWidth = 700; 
 
       if (info.id === 4) {
-        // Adjust the width for the PDF with id 4
-        pdfWidth = 500; // Set a smaller width for this specific PDF
+     
+        pdfWidth = 500; 
       }
 
       return (
@@ -83,7 +83,7 @@ const InfoPortfolio = ({ info }) => {
         </div>
       );
     } else if (info.file.endsWith(".mp4")) {
-      // Render a video player for MP4 files with a smaller width
+    
       return (
         <div className="video-container">
           <video controls width="650">
