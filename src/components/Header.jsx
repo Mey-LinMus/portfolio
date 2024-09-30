@@ -21,7 +21,7 @@ const Header = () => {
       .typeString("Hey, Ik ben <strong> Mey-Lin Mus.</strong>")
       .pauseFor(1000)
       .typeString(
-        " Ik heb gestudeerd aan de Erasmushogeschool Brussel, waar ik de opleiding Multimedia & Creatieve Technologie heb gevolgd. Ik ben gepassioneerd door de voortdurend veranderende geconnecteerde wereld.\n" +
+        " Ik heb gestudeerd aan de Erasmushogeschool Brussel, waar ik de opleiding Multimedia & Creatieve Technologie heb gevolgd.\n" +
           "Als enthousiast persoon sta ik altijd open voor het leren van nieuwe dingen. Als doorzetter geef ik niet snel op.\n" +
           "Ik werk nauwkeurig en met het nodige geduld. Bovendien werk ik graag in teamverband en ben ik goed in communiceren."
       )
