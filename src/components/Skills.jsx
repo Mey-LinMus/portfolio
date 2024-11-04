@@ -3,12 +3,12 @@ import ScrollTrigger from "react-scroll-trigger";
 import "../styles/skills.css";
 
 const skills = [
-  { name: "React.js", level: 40 },
-  { name: "HTML/CSS", level: 90 },
-  { name: "After Effects", level: 80 },
-  { name: "Illustrator", level: 85 },
-  { name: "Photoshop", level: 75 },
-  { name: "XD", level: 85 },
+  { name: "Webdesign", level: 80 },
+  { name: "Webdevelopment", level: 60 },
+  { name: "Animatie", level: 65 },
+  { name: "Video-editing", level: 85 },
+  { name: "Fotobewerking", level: 86},
+  { name: "Multimedia Design", level: 81 },
 ];
 
 const Skills = () => {
