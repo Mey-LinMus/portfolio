@@ -3,7 +3,7 @@ import ScrollTrigger from 'react-scroll-trigger';
 import '../styles/languages.css';
 
 const languages = [
-  { name: 'Nederlands', proficiency: 90 },
+  { name: 'Nederlands', proficiency: 100 },
   { name: 'Engels', proficiency: 80 },
   { name: 'Frans', proficiency: 50 },
 ];
