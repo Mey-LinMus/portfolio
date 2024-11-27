@@ -32,7 +32,7 @@ const Portfolio = () => {
       <motion.div
         className="slick-custom-arrow"
         whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 0.5 }}
+        whileTap={{ scale: 0.8 }}
       >
         <AiOutlineCaretLeft />
       </motion.div>
@@ -41,7 +41,7 @@ const Portfolio = () => {
       <motion.div
         className="slick-custom-arrow"
         whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 0.5 }}
+        whileTap={{ scale: 0.8 }}
       >
         <AiOutlineCaretRight />
       </motion.div>

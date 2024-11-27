@@ -1,25 +1,12 @@
-.carousel-container h2 {
-  text-align: center;
-  margin-bottom: 5%;
-  margin-top: 5%;
-  color: #ffffff;
-}
-
-.slider-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .carousel-item {
   text-align: center;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.31);
   border-radius: 16px;
+  background: rgba(255, 255, 255, 0);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.4px);
-  -webkit-backdrop-filter: blur(1.4px);
-  border: 1px solid rgba(255, 255, 255, 0.47);
-  border-radius: 12px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 250px;
   margin: 0 auto;
@@ -29,6 +16,7 @@
 .carousel-item:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fdfdfd;
 }
 
 .port-items {
@@ -44,9 +32,10 @@
 }
 
 .carousel-item h3 {
-  font-weight: bold;
   margin: 10px 0 5px;
   color: #fdfdfd;
+  font-size: 15px;
+  font-weight: lighter;
 }
 
 .carousel-item p {

@@ -9,6 +9,8 @@ import { motion, useAnimation } from "framer-motion";
 import "../styles/Home.css";
 import { useLocation } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
+import Softwares from "../components/Softwares";
+
 
 const Home = () => {
   const footerRef = useRef(null);
@@ -171,6 +173,14 @@ const Home = () => {
       <ScrollTrigger
         onEnter={handleScrollEnter}
         onExit={handleScrollExit}
+        className="Skills"
+      >
+        <Softwares />
+      </ScrollTrigger>
+
+      <ScrollTrigger
+        onEnter={handleScrollEnter}
+        onExit={handleScrollExit}
         className="languages-section Languages"
       >
         <div ref={languagesInViewRef} className="Languages">
@@ -187,6 +197,7 @@ const Home = () => {
           <Footer />
         </div>
       </ScrollTrigger>
+  
     </div>
   );
 };
