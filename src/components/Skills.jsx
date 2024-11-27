@@ -7,7 +7,7 @@ const skills = [
   { name: "Webdevelopment", level: 60 },
   { name: "Animatie", level: 65 },
   { name: "Video-editing", level: 85 },
-  { name: "Fotobewerking", level: 86},
+  { name: "Fotobewerking", level: 86 },
   { name: "Multimedia Design", level: 81 },
 ];
 
@@ -40,7 +40,7 @@ const Skills = () => {
   return (
     <div className="skills">
       <ScrollTrigger onEnter={handleScrollEnter}>
-        <h2>Vaardigheden</h2>
+        <h2 style={{ marginBottom: "40px" }}>Vaardigheden</h2>
         <div className="skills-columns">
           <div className="skills-column">
             {skills.slice(0, 3).map((skill, index) => (

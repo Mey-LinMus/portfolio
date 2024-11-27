@@ -68,7 +68,7 @@ const Portfolio = () => {
       animate={controls}
       variants={portfolioVariants}
     >
-      <h2>Portfolio</h2>
+      
       <div className="slider-wrapper">
         <Slider {...carouselSettings}>
           {portfolioData.map((item) => (
