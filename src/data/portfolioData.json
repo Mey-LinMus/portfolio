@@ -1,5 +1,17 @@
 [
   {
+    "id": 24,
+    "image": "Asian_Music Vibes.jpg",
+    "itemTitle": "Asian Music Vibes",
+    "course": "Faceboock",
+    "detail": {
+      "title": "Asian Music Vibes",
+      "file": "https://www.facebook.com/groups/1763237444251822/",
+      "description": "",
+      "technologies": []
+    }
+  },
+  {
     "id": 1,
     "image": "DesignI_Werkstuk_zelfWebsite.png",
     "itemTitle": "Website: Thema mezelf",
@@ -296,6 +308,18 @@
     "itemTitle": "Kunst in Huis",
     "detail": {
       "title": "Kunst in Huis",
+      "file": "Kunst_in_huis.pdf",
+      "description": "",
+      "technologies": []
+    }
+  },
+
+  {
+    "id": 23,
+    "image": "kunst_in_huis.png",
+    "itemTitle": "Kunst in Huis",
+    "detail": {
+      "title": "Asian Music Vibes",
       "file": "Kunst_in_huis.pdf",
       "description": "",
       "technologies": []
