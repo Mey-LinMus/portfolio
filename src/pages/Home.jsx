@@ -10,7 +10,7 @@ import "../styles/Home.css";
 import { useLocation } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import Softwares from "../components/Softwares";
-
+import Experience from "../components/Experience";
 
 const Home = () => {
   const footerRef = useRef(null);
@@ -157,6 +157,10 @@ const Home = () => {
             animate={controls}
             variants={portfolioVariants}
           >
+            <h2 style={{ textAlign: "center", marginBottom: "40px" }}>
+              Portfolio
+            </h2>
+
             <Portfolio />
           </motion.div>
         </div>
@@ -168,6 +172,16 @@ const Home = () => {
         className="Skills"
       >
         <Skills />
+      </ScrollTrigger>
+
+      <ScrollTrigger
+        onEnter={handleScrollEnter}
+        onExit={handleScrollExit}
+        className="experience-section"
+      >
+        <div ref={languagesInViewRef} className="Experience">
+          <Experience />
+        </div>
       </ScrollTrigger>
 
       <ScrollTrigger
@@ -197,7 +211,6 @@ const Home = () => {
           <Footer />
         </div>
       </ScrollTrigger>
-  
     </div>
   );
 };

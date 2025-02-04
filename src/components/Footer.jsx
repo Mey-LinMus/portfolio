@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "../styles/footer.css";
 import { AiFillPhone, AiFillMail, AiFillLinkedin } from "react-icons/ai";
-
+import Button from "./DownloadCVButton";
 const Footer = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
@@ -45,13 +45,13 @@ const Footer = () => {
           animate={controls}
           variants={animationVariants}
         >
-         <ul className="contact-list">
+          <ul className="contact-list">
             <li>
-              <AiFillMail /> {" "}
+              <AiFillMail />{" "}
               <a href="mailto:mey-lin.mus@hotmail.be">mey-lin.mus@hotmail.be</a>
             </li>
             <li>
-              <AiFillLinkedin /> {" "}
+              <AiFillLinkedin />{" "}
               <a href="https://www.linkedin.com/in/mey-lin-mus-b99647225/">
                 Mey-Lin Mus
               </a>
@@ -59,6 +59,9 @@ const Footer = () => {
             <li>
               <AiFillPhone />{" "}
               <a href="tel:+32 4 74 32 78 77">+32 4 74 32 78 77</a>
+            </li>
+            <li>
+              <Button />
             </li>
           </ul>
         </motion.div>
