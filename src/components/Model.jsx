@@ -1,6 +1,3 @@
-// made with: https://hub.avaturn.me/editor?customization_id=0194d072-e2c1-7d9f-83d1-6118d3c05ff5
-
-
 import React, { useRef, useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
@@ -11,31 +8,42 @@ const Character = (props) => {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(Myself);
   const { actions } = useAnimations(animations, group);
-  const { mouse } = useThree(); // Get mouse position
-
-  // Reference to the head bone (e.g., nodes.Hips or another bone)
+  const { mouse } = useThree();
+  const mixer = useRef();
   const headBone = useRef();
 
   useEffect(() => {
-    console.log(animations);
-
     if (animations && actions) {
-      if (actions[animations[0]?.name]) {
-        actions[animations[0].name].play().setDuration(25);
-      }
+      const originalClip = animations[0];
+
+      // Create a subclip to ensure seamless looping
+      const subClip = THREE.AnimationUtils.subclip(
+        originalClip,
+        originalClip.name,
+        0, // Start frame
+        originalClip.duration * 30 - 1 // End frame (adjust as needed)
+      );
+
+      mixer.current = new THREE.AnimationMixer(group.current);
+      const clipAction = mixer.current.clipAction(subClip);
+      clipAction
+        .setLoop(THREE.LoopRepeat, Infinity)
+        .setEffectiveTimeScale(1)
+        .play();
     }
 
-    // Set the head bone reference (adjust based on your model's bone structure)
     if (nodes.Hips) {
       headBone.current = nodes.Hips;
     }
   }, [animations, actions, nodes]);
 
-  // Smoothly rotate the head based on mouse position
-  useFrame(() => {
+  useFrame((state, delta) => {
+    if (mixer.current) {
+      mixer.current.update(delta); // Update the animation mixer
+    }
+
     if (headBone.current) {
       const targetRotationY = mouse.x * 0.5; // Horizontal movement
-
       headBone.current.rotation.y = THREE.MathUtils.lerp(
         headBone.current.rotation.y,
         targetRotationY,
