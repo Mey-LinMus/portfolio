@@ -1,3 +1,6 @@
+// made with: https://hub.avaturn.me/editor?customization_id=0194d072-e2c1-7d9f-83d1-6118d3c05ff5
+
+
 import React, { useRef, useEffect } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
