@@ -1,15 +1,16 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap, Power1 } from "gsap";
 import Typewriter from "typewriter-effect/dist/core";
 import "../styles/header.css";
-import Profile from "../assets/profile picture.png";
 import Logo from "../assets/MLogo.svg";
+import { Canvas } from "@react-three/fiber";
+
+import ModelScene from "./Scene";
 
 const Header = () => {
   const typewriterRef = useRef(null);
   const profilePictureRef = useRef(null);
 
-  // Typewriter effect
   useEffect(() => {
     const typewriter = new Typewriter(typewriterRef.current, {
       loop: false,
@@ -28,18 +29,6 @@ const Header = () => {
       .start();
 
     // Wavy animation
-    gsap.fromTo(
-      profilePictureRef.current,
-      { x: -5, rotation: -0.5 },
-      {
-        x: 5,
-        rotation: 0.5,
-        repeat: -1,
-        yoyo: true,
-        ease: Power1.easeInOut,
-        duration: 1,
-      }
-    );
   }, []);
 
   return (
@@ -50,8 +39,8 @@ const Header = () => {
       <div id="hearder-text">
         <span ref={typewriterRef} className="header-info"></span>
       </div>
-      <div className="profile-picture" ref={profilePictureRef}>
-        <img src={Profile} alt="Profile" />
+      <div className="profile-picture">
+        <ModelScene/>
       </div>
     </div>
   );
